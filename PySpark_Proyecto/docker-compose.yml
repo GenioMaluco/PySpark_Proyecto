@@ -1,0 +1,10 @@
+﻿version: '3.8'
+
+services:
+  spark:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./data:/data
+    ports:
+      - "4040:4040"
